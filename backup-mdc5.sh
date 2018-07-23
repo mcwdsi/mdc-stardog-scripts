@@ -11,6 +11,7 @@ echo $indexingbackup
 echo $apollosvbackup
 /opt/stardog/stardog-5.2.2/bin/stardog data export -u $3 -f RDF/XML -g http://www.pitt.edu/obc/ide/apollo-sv -- $1 $apollosvbackup
 echo $mdccontentbackup
-/opt/stardog/stardog-5.2.2/bin/stardog data export -u $3 -f RDF/XML -g http://www.pitt.edu/obc/ide/mdc-content -- $1 $mdccontentbackup
+/opt/stardog/stardog-5.2.2/bin/stardog data export -u $3 -f RDF/XML -g http://www.pitt.edu/obc/mdc/content -- $1 $mdccontentbackup
+
 
 
